@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
@@ -43,5 +43,26 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+</style> -->
+
+<script setup lang="ts">
+// import contador from './pruebas/contador.vue';
+
+import { ref } from 'vue'
+const count = ref(0)
+const hola = 'hola'
+</script>
+
+<template>
+  <h1>{{ hola }}</h1>
+  <button @click="count++">Count is: {{ count }}</button>
+</template>
+
+<style scoped>
+button {
+  font-weight: bold;
+  background-color: antiquewhite;
+  
 }
 </style>
